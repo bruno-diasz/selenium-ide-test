@@ -14,7 +14,7 @@ Gravei um breve vídeo demonstrando a execução da suíte de testes e explicand
 
 Durante o desenvolvimento dos scripts, priorizei a aplicação de conceitos fundamentais de Engenharia de Qualidade para garantir testes robustos, manuteníveis e confiáveis:
 
-*   **Padrão de Nomenclatura:** Os Casos de Teste (CTs) foram nomeados seguindo a convenção `[Identificador]_[Cenário]_[ComportamentoEsperado]` (ex: `CTC01_DadosValidos_DeveEnviarComSucesso`). Isso garante alta rastreabilidade e facilita a leitura de relatórios de falha.
+*   **Padrão de Nomenclatura:** Os Casos de Teste (TCs) foram nomeados seguindo a convenção `[Identificador]_[Cenário]_[ComportamentoEsperado]` (ex: `TC01_DadosValidos_DeveEnviarComSucesso`). Isso garante alta rastreabilidade e facilita a leitura de relatórios de falha.
 *   **Isolamento de Testes (Independência):** Para evitar "falsos positivos" ou dependência de estado entre os cenários, implementei uma rotina de **Setup** rigorosa. Cada teste inicia com uma nova requisição (`open`) para a URL raiz da aplicação. Isso assegura que o formulário comece com o estado 100% limpo, espelhando o comportamento de um usuário real.
 *   **Validação de Estado Dinâmico e Componentes Nativos:** Abordagens específicas foram utilizadas para lidar com o comportamento reativo da interface moderna:
     *   Testes pontuais de validação *on submit* (como formato de e-mail).
